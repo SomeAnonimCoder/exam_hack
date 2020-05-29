@@ -1,7 +1,5 @@
 FROM ubuntu:18.04
 
-LABEL authors="Vincent BESANCON <besancon.vincent@gmail.com>"
-
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install requirements
