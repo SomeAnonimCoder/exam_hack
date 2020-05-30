@@ -22,7 +22,7 @@ First get this code; than run
     #build a container from source
     docker build -t chromium:x2go .
     #run a container. key --privileged is needed for correct webcam and mic works
-    docker run --privileged --shm-size=512m -v /dev:/dev -d -p 2222:22 --name=exam chromium:x2go
+    docker run --privileged --shm-size=512m -v /dev:/dev -d -p 2222:22 --name=exam chromium:x2go -v /Images:/Images
     #to get login and passwd
     docker logs exam 
 
